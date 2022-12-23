@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/garyburd/redigo/redis"
+	"github.com/gomodule/redigo/redis"
 	"gopkg.in/vmihailenco/msgpack.v2"
 	"gopkg.in/yaml.v2"
 )

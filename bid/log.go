@@ -1,7 +1,7 @@
 package bid
 
 import (
-	"github.com/mxmCherry/openrtb"
+	openrtb "github.com/mxmCherry/openrtb/openrtb2"
 )
 
 func makeRequestLog(r *openrtb.BidRequest, br *openrtb.BidResponse) map[string]interface{} {

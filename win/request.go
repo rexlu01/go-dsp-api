@@ -5,8 +5,9 @@ import (
 	"net/http"
 	"strconv"
 
+	"context"
+
 	"github.com/guregu/kami"
-	"golang.org/x/net/context"
 
 	"github.com/satoshi03/go-dsp-api/common/errors"
 )

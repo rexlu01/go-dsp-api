@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/mxmCherry/openrtb"
+	openrtb "github.com/mxmCherry/openrtb/openrtb2"
 
 	"github.com/satoshi03/go-dsp-api/common/consts"
 	"github.com/satoshi03/go-dsp-api/common/errors"

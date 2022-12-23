@@ -4,8 +4,9 @@ import (
 	"log"
 	"time"
 
+	"context"
+
 	flib "github.com/fluent/fluent-logger-golang/fluent"
-	"golang.org/x/net/context"
 )
 
 func Open(ctx context.Context, host string, port int, key string) context.Context {

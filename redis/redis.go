@@ -5,8 +5,9 @@ import (
 	"log"
 	"time"
 
-	rlib "github.com/garyburd/redigo/redis"
-	"golang.org/x/net/context"
+	"context"
+
+	rlib "github.com/gomodule/redigo/redis"
 )
 
 func Open(ctx context.Context, host string, port int, key string) context.Context {

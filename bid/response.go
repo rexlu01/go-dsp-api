@@ -1,9 +1,9 @@
 package bid
 
 import (
-	"github.com/mxmCherry/openrtb"
-	"github.com/pborman/uuid"
+	openrtb "github.com/mxmCherry/openrtb/openrtb2"
 
+	"github.com/google/uuid"
 	"github.com/satoshi03/go-dsp-api/common/consts"
 	"github.com/satoshi03/go-dsp-api/data"
 )
@@ -31,7 +31,7 @@ func makeSeatBid(ads []*data.Ad) []openrtb.SeatBid {
 
 func makeBid(ad *data.Ad) *openrtb.Bid {
 	return &openrtb.Bid{
-		ID:    uuid.NewRandom().String(),
+		ID:    uuid.New().String(),
 		ImpID: ad.ImpID,
 		Price: ad.CalcBidPrice(),
 		AdID:  ad.AdID,

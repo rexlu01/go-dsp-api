@@ -3,9 +3,9 @@ package bid
 import (
 	"log"
 
-	"github.com/mxmCherry/openrtb"
-	"golang.org/x/net/context"
+	"context"
 
+	openrtb "github.com/mxmCherry/openrtb/openrtb2"
 	"github.com/satoshi03/go-dsp-api/common/consts"
 	"github.com/satoshi03/go-dsp-api/common/errors"
 	"github.com/satoshi03/go-dsp-api/data"

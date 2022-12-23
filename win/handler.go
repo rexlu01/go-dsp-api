@@ -4,8 +4,9 @@ import (
 	"log"
 	"net/http"
 
+	"context"
+
 	"github.com/guregu/kami"
-	"golang.org/x/net/context"
 
 	"github.com/satoshi03/go-dsp-api/common/utils"
 	"github.com/satoshi03/go-dsp-api/fluent"

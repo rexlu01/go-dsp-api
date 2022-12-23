@@ -1,8 +1,9 @@
 package data
 
 import (
-	"github.com/mxmCherry/openrtb"
-	"golang.org/x/net/context"
+	"context"
+
+	openrtb "github.com/mxmCherry/openrtb/openrtb2"
 	"gopkg.in/vmihailenco/msgpack.v2"
 
 	"github.com/satoshi03/go-dsp-api/common/consts"
@@ -20,17 +21,17 @@ const (
 	Native          = `native`
 )
 
-func getBannerDetailView(w, h uint64) (string, error) {
+func getBannerDetailView(w, h *int64) (string, error) {
 	// if size is empty, use default
-	if w == 0 && h == 0 {
+	if *w == 0 && *h == 0 {
 		return BannerRegular, nil
 	}
 	// In case of regular banner size
-	if w == consts.BannerRegularWidth && h == consts.BannerRegularHight {
+	if *w == consts.BannerRegularWidth && *h == consts.BannerRegularHight {
 		return BannerRegular, nil
 	}
 	// In case of rectangle banner size
-	if w == consts.BannerRectangleWidth && h == consts.BannerRectangleHight {
+	if *w == consts.BannerRectangleWidth && *h == consts.BannerRectangleHight {
 		return BannerRectangle, nil
 	}
 	// Creative size not match

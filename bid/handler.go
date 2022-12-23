@@ -5,8 +5,10 @@ import (
 	"net/http"
 
 	"github.com/guregu/kami"
-	"github.com/mxmCherry/openrtb"
-	"golang.org/x/net/context"
+
+	openrtb "github.com/mxmCherry/openrtb/openrtb2"
+
+	"context"
 
 	"github.com/satoshi03/go-dsp-api/common/consts"
 	"github.com/satoshi03/go-dsp-api/common/utils"
