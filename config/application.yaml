@@ -1,0 +1,4 @@
+server:
+  post: 7001
+  servlet:
+     context-path: /ad-dsp-admin
